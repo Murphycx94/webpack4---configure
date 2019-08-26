@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{13:function(n,e,t){"use strict";t.r(e);var o=t(2),a=t(3),c=t(5),l=t(4),u=t(6),i=t(0),r=t.n(i);console.log("lazyload.js loaded");var s=function(n){function e(){return Object(o.a)(this,e),Object(c.a)(this,Object(l.a)(e).apply(this,arguments))}return Object(u.a)(e,n),Object(a.a)(e,[{key:"componentDidMount",value:function(){console.log("lazyload 组件渲染成功")}},{key:"render",value:function(){return r.a.createElement("div",null,"这部分是懒加载的内容哦")}}]),e}(i.Component);e.default=s}}]);
+//# sourceMappingURL=lazyload.30eacf31.js.map
