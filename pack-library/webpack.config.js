@@ -1,4 +1,5 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const getDependenciesWebpackPlugin = require('./get-dependencies-webpack-plugin/index')
 const TerserPlugin = require('terser-webpack-plugin')
 const path = require('path')
 
@@ -14,7 +15,7 @@ module.exports = {
     library: 'largeNumber',
     libraryTarget: 'umd',
     libraryExport: 'default',
-    globalObject: 'this'
+    globalObject: "typeof window !== 'undefined' ? window : this"
   },
   optimization: {
     minimize: true,
@@ -25,6 +26,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
+    new getDependenciesWebpackPlugin()
   ]
 }
